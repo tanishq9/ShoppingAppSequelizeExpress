@@ -4,8 +4,58 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        <style>
+            .btn-success:hover{
+                background-color:darkgreen;
+            }
+            .btn-success{
+                width: 100%;
+            }
+
+            body{
+                background-color: darksalmon;
+                /* background: url('./photos/background.jpg');  */
+                padding: 10px;
+            }
+
+        </style>
     </head>
     <body>
-        <h1>Hello</h1>
+        <div class = "container">
+            <div class="row">
+                <div class="col-5"></div>
+                <div class="col-4">
+                    <blockquote style="display:inline; color: rgb(255, 255, 255);" class="h1">Shop</blockquote>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row p-20" id="product-list">
+                    <div class="col-4 card m-2 p-4">
+                            <h4 class="product-name">Pixel-2</h4>
+                            <div class="product-manufacturer">Google</div>
+                            <div class="row">
+                                <div class="col m-3 p-3">
+                                    <b>Rs.65000</b>
+                                </div>
+                                <button class="col btn btn-primary m-3">Buy</button> 
+                            </div>
+                    </div>
+                    <div class="col-4 card m-2 p-4">
+                            <h4 class="product-name">Pixel-2</h4>
+                            <div class="product-manufacturer">Google</div>
+                            <div class="row">
+                                <div class="col m-3 p-3">
+                                    <b>Rs.65000</b>
+                                </div>
+                                <button class="col btn btn-primary m-3">Buy</button> 
+                            </div>
+                    </div>
+                 </div>
+            </div>
     </body>
 </html>
